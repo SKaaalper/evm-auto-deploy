@@ -42,8 +42,13 @@ PRIVATE_KEY=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
 ```
 
 4. Add your desired chain configuration to `chains/testnet.json` or `chains/mainnet.json`.
+- For Testnet use:
 ```
 nano chains/testnet.json
+```
+- For Mainnet use:
+```
+nano chains/mainnet.json
 ```
 - Format:
 ```
