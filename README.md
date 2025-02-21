@@ -21,30 +21,30 @@ To use **EVM Auto Deploy**, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/SKaaalper/evm-auto-deploy.git
-   ```
+```
+git clone https://github.com/SKaaalper/evm-auto-deploy.git
+```
 
 2. Install the dependencies:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Create a `.env` file in the root directory with the following variables:
-   - `PRIVATE_KEY`: Your Ethereum private key
-    ```
-    nano .env
-    ```
+- `PRIVATE_KEY`: Your Ethereum private key
+```
+nano .env
+```
 - Format:
 ```
 PRIVATE_KEY=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
 ```
 
 4. Add your desired chain configuration to `chains/testnet.json` or `chains/mainnet.json`.
-    ```
-    nano chains/testnet.json
-    ```
+```
+nano chains/testnet.json
+```
 - Format:
 ```
 [
@@ -60,9 +60,9 @@ PRIVATE_KEY=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
 
 6. Run the script:
 
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 
 ## Prerequisites
 
