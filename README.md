@@ -22,7 +22,7 @@ To use **EVM Auto Deploy**, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dante4rt/evm-auto-deploy.git
+   git clone https://github.com/SKaaalper/evm-auto-deploy.git
    ```
 
 2. Install the dependencies:
@@ -33,10 +33,32 @@ To use **EVM Auto Deploy**, follow these steps:
 
 3. Create a `.env` file in the root directory with the following variables:
    - `PRIVATE_KEY`: Your Ethereum private key
+    ```
+    nano .env
+    ```
+- Format:
+```
+PRIVATE_KEY=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+```
 
 4. Add your desired chain configuration to `chains/testnet.json` or `chains/mainnet.json`.
+    ```
+    nano chains/testnet.json
+    ```
+- Format:
+```
+[
+    {
+        "name": "Nexus",
+        "rpcUrl": "https://rpc.nexus.xyz/http",
+        "chainId": "392",
+        "symbol": "NEX",
+        "explorer": "https://explorer.nexus.xyz"
+    }
+]
+```
 
-5. Run the script:
+6. Run the script:
 
    ```bash
    npm start
@@ -66,26 +88,6 @@ npm start
 ```
 
 Follow the prompts to select the network, enter the token name, symbol, and supply, and deploy the contract.
-
-## Environment Variables
-
-To use **EVM Auto Deploy**, you need to create a `.env` file in the root directory with the following variables:
-
-- `PRIVATE_KEY`: Your Ethereum private key
-
-### Example `.env` file
-
-```bash
-PRIVATE_KEY=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
-```
-
-## Donations
-
-If you would like to support the development of this project, you can make a donation using the following addresses:
-
-- **Solana**: `GLQMG8j23ookY8Af1uLUg4CQzuQYhXcx56rkpZkyiJvP`
-- **EVM**: `0x960EDa0D16f4D70df60629117ad6e5F1E13B8F44`
-- **BTC**: `bc1p9za9ctgwwvc7amdng8gvrjpwhnhnwaxzj3nfv07szqwrsrudfh6qvvxrj8`
 
 ## License
 
