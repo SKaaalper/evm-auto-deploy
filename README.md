@@ -22,7 +22,7 @@ To use **EVM Auto Deploy**, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/SKaaalper/evm-auto-deploy.git
+git clone https://github.com/SKaaalper/evm-auto-deploy.git && cd evm-auto-deploy
 ```
 
 2. Install the dependencies:
